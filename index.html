@@ -4,25 +4,25 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Encrypt what you say!</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+		<script src="index.js"></script>
 	</head>
 	<body>
 		<center>
 			<h1>Encrypt what you say!</h1>
 			<h2>Start talking</h2>
-			Shared key (only the other person should see it): <input type="text" name="" id="shared-key-out" readonly>
-		</center>
-		<br>
-		<br>
-		<br>
-		<center>
-			<h2>Talk</h2>
-			Enter shared key (it doesn't matter if it's your or other person's, but it must be the same): <input type="text" name="" id="shared-key-in">
+			The shared key can be anything.<br>
+			Enter shared key (it must be the same, and noone else should see it!): <input type="text" name="" id="shared-key">
+			Use <a href="https://totallynotauser.github.io/message-crypt">another tool</a> to share it.
 			<br>
 			<textarea id="encrypt-msg" cols="30" rows="10"></textarea>
-			<button id="encrypt">Encrypt</button>
+			<button id="encrypt" onmousedown="encrypt();">Encrypt</button>
 			<br>
 			<textarea id="decrypt-msg" cols="30" rows="10"></textarea>
-			<button id="decrypt">Decrypt</button>
+			<button id="decrypt" onmousedown="decrypt();">Decrypt</button>
 		</center>
+		<footer>
+			Uses <a href=""></a>
+		</footer>
 	</body>
 </html>
