@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: monospace;">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Encrypt what you say!</title>
+	</head>
+	<body>
+		<center>
+			<h1>Encrypt what you say!</h1>
+			<h2>Start talking</h2>
+			Shared key (only the other person should see it): <input type="text" name="" id="shared-key-out" readonly>
+		</center>
+		<br>
+		<br>
+		<br>
+		<center>
+			<h2>Talk</h2>
+			Enter shared key (it doesn't matter if it's your or other person's, but it must be the same): <input type="text" name="" id="shared-key-in">
+			<br>
+			<textarea id="encrypt-msg" cols="30" rows="10"></textarea>
+			<button id="encrypt">Encrypt</button>
+			<br>
+			<textarea id="decrypt-msg" cols="30" rows="10"></textarea>
+			<button id="decrypt">Decrypt</button>
+		</center>
+	</body>
+</html>
